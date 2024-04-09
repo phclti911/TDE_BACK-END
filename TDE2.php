@@ -4,6 +4,9 @@ class Funcionario{
   public $nome;
   protected $salario;
   public $cargo;
+  
+
+  
 
   public function __construct($nome,$salario,$cargo){
     $this->nome = $nome;
@@ -17,7 +20,7 @@ class Funcionario{
   //calcula salário
 
   public function calculaSalario(){
-    return $this->salario;
+    return $this->salario*1.5;
 
   }
 
@@ -125,20 +128,29 @@ function calcularMedia($notas) {
 
 
 class Biblioteca{
+  public $livro;
   public $id_livro;
-  public $titulo_livro;
 
 //classe de biblioteca
 
-public function __construct($id_livro,$titulo_livro){
+
+public function __construct($livro,$id_livro){
   $this->livro= $livro;
   $this->id_livro = $id_livro;
 
+  
+  
+  
   //construtor bibilioteca
 
 
 
 } 
+   public function GetLivro(){
+     return $this->livro = $livro;
+   }
+
+  
 
 }
 
@@ -152,7 +164,8 @@ public function __construct($id_livro,$titulo_livro){
 
 //TESTES DE FUNÇÕES E MÉTODOS NA HORA DA APRESENTAÇÃO
 
+//$professor1 = new Professor("jonh",100000,"professor");
+//echo $professor1-> CalculaSalario();
 
-
-
-
+//$biblioteca1 = new Biblioteca("livro",1234);
+//echo $biblioteca1->GetLivro();
