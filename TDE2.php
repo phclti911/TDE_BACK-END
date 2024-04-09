@@ -51,12 +51,12 @@ class Professor extends Funcionario{
   public $disciplina;
   //classe de professor
 }
-
+//classe aluno
 class Aluno{
   public $nome;
   public $matricula;
   public $notas = array();
-
+//cadastro de alunos
   public function CadastraAluno($aluno){
     $aluno= array();
     $this->aluno = $aluno;
@@ -90,11 +90,7 @@ class Aluno{
     }
 }
 
-//$aluno = new Aluno("João", "12345");
-//$aluno->adicionarNota(9.5);
-//$aluno->adicionarNota(8.7);
-//$aluno->setMensalidade(500.00);
-//echo $aluno->getMensalidade();
+//classe disciplina
 
 class Disciplina {
     private $nome;
@@ -139,7 +135,7 @@ public function __construct($livro,$id_livro){
   $this->id_livro = $id_livro;
    //construtor bibilioteca
 } 
-   
+   //getters e seters livros
 public function GetLivro(){
 return $this->livro;
 }
@@ -164,3 +160,8 @@ return $this->livro;
 //echo $professor1-> CalculaSalario();
 //$biblioteca1 = New Biblioteca("logica matematica",18392);
 //echo $biblioteca1->GetLivro();
+//$aluno = new Aluno("João", "12345");
+//$aluno->adicionarNota(9.5);
+//$aluno->adicionarNota(8.7);
+//$aluno->setMensalidade(500.00);
+//echo $aluno->getMensalidade();
