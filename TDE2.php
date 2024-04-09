@@ -137,19 +137,15 @@ class Biblioteca{
 public function __construct($livro,$id_livro){
   $this->livro= $livro;
   $this->id_livro = $id_livro;
-
-  
-  
-  
-  //construtor bibilioteca
-
-
-
+   //construtor bibilioteca
 } 
-   public function GetLivro(){
-     return $this->livro = $livro;
-   }
-
+   
+public function GetLivro(){
+return $this->livro;
+}
+  public function GetIdLivro(){
+    return $this->id_livro;
+  }
   
 
 }
@@ -162,10 +158,9 @@ public function __construct($livro,$id_livro){
 //echo $professor1-> CalculaSalario();
 
 
-//TESTES DE FUNÇÕES E MÉTODOS NA HORA DA APRESENTAÇÃO
+//TESTES DE FUNÇÕES E MÉTODOS:
 
-//$professor1 = new Professor("jonh",100000,"professor");
+//$professor1 = new Professor("Jonh",100000,"professor");
 //echo $professor1-> CalculaSalario();
-
-//$biblioteca1 = new Biblioteca("livro",1234);
+//$biblioteca1 = New Biblioteca("logica matematica",18392);
 //echo $biblioteca1->GetLivro();
